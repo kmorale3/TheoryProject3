@@ -1,0 +1,205 @@
+./traceTM_kmorale3.py middle.csv $a
+Name:                        Middle
+Input String:               '$a_'
+Depth of Configuration Tree: 5
+Total Transitions Taken:     6
+String accepted in 5 steps:
+q1 $a_
+$ q2 a_
+q3 $m_
+$ q5 m_
+$m q5 _
+$ qacc m_
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $aa
+Name:                        Middle
+Input String:               '$aa_'
+Depth of Configuration Tree: 6
+Total Transitions Taken:     11
+String rejected in 11 steps
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $aaa
+Name:                        Middle
+Input String:               '$aaa_'
+Depth of Configuration Tree: 13
+Total Transitions Taken:     23
+String accepted in 13 steps:
+q1 $aaa_
+$ q2 aaa_
+$a q2 aa_
+$ q3 ama_
+$x q4 ma_
+$xm q4 a_
+$x q3 mx_
+$ q3 xmx_
+q3 $xmx_
+$ q5 xmx_
+$x q5 mx_
+$xm q5 x_
+$xmx q5 _
+$xm qacc x_
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $aaaa
+Name:                        Middle
+Input String:               '$aaaa_'
+Depth of Configuration Tree: 14
+Total Transitions Taken:     35
+String rejected in 35 steps
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $aaaaaaaaaaaaa
+Name:                        Middle
+Input String:               '$aaaaaaaaaaaaa_'
+Depth of Configuration Tree: 113
+Total Transitions Taken:     538
+String accepted in 113 steps:
+q1 $aaaaaaaaaaaaa_
+$ q2 aaaaaaaaaaaaa_
+$a q2 aaaaaaaaaaaa_
+$aa q2 aaaaaaaaaaa_
+$aaa q2 aaaaaaaaaa_
+$aaaa q2 aaaaaaaaa_
+$aaaaa q2 aaaaaaaa_
+$aaaaaa q2 aaaaaaa_
+$aaaaa q3 amaaaaaa_
+$aaaaax q4 maaaaaa_
+$aaaaaxm q4 aaaaaa_
+$aaaaax q3 mxaaaaa_
+$aaaaa q3 xmxaaaaa_
+$aaaa q3 axmxaaaaa_
+$aaaax q4 xmxaaaaa_
+$aaaaxx q4 mxaaaaa_
+$aaaaxxm q4 xaaaaa_
+$aaaaxxmx q4 aaaaa_
+$aaaaxxm q3 xxaaaa_
+$aaaaxx q3 mxxaaaa_
+$aaaax q3 xmxxaaaa_
+$aaaa q3 xxmxxaaaa_
+$aaa q3 axxmxxaaaa_
+$aaax q4 xxmxxaaaa_
+$aaaxx q4 xmxxaaaa_
+$aaaxxx q4 mxxaaaa_
+$aaaxxxm q4 xxaaaa_
+$aaaxxxmx q4 xaaaa_
+$aaaxxxmxx q4 aaaa_
+$aaaxxxmx q3 xxaaa_
+$aaaxxxm q3 xxxaaa_
+$aaaxxx q3 mxxxaaa_
+$aaaxx q3 xmxxxaaa_
+$aaax q3 xxmxxxaaa_
+$aaa q3 xxxmxxxaaa_
+$aa q3 axxxmxxxaaa_
+$aax q4 xxxmxxxaaa_
+$aaxx q4 xxmxxxaaa_
+$aaxxx q4 xmxxxaaa_
+$aaxxxx q4 mxxxaaa_
+$aaxxxxm q4 xxxaaa_
+$aaxxxxmx q4 xxaaa_
+$aaxxxxmxx q4 xaaa_
+$aaxxxxmxxx q4 aaa_
+$aaxxxxmxx q3 xxaa_
+$aaxxxxmx q3 xxxaa_
+$aaxxxxm q3 xxxxaa_
+$aaxxxx q3 mxxxxaa_
+$aaxxx q3 xmxxxxaa_
+$aaxx q3 xxmxxxxaa_
+$aax q3 xxxmxxxxaa_
+$aa q3 xxxxmxxxxaa_
+$a q3 axxxxmxxxxaa_
+$ax q4 xxxxmxxxxaa_
+$axx q4 xxxmxxxxaa_
+$axxx q4 xxmxxxxaa_
+$axxxx q4 xmxxxxaa_
+$axxxxx q4 mxxxxaa_
+$axxxxxm q4 xxxxaa_
+$axxxxxmx q4 xxxaa_
+$axxxxxmxx q4 xxaa_
+$axxxxxmxxx q4 xaa_
+$axxxxxmxxxx q4 aa_
+$axxxxxmxxx q3 xxa_
+$axxxxxmxx q3 xxxa_
+$axxxxxmx q3 xxxxa_
+$axxxxxm q3 xxxxxa_
+$axxxxx q3 mxxxxxa_
+$axxxx q3 xmxxxxxa_
+$axxx q3 xxmxxxxxa_
+$axx q3 xxxmxxxxxa_
+$ax q3 xxxxmxxxxxa_
+$a q3 xxxxxmxxxxxa_
+$ q3 axxxxxmxxxxxa_
+$x q4 xxxxxmxxxxxa_
+$xx q4 xxxxmxxxxxa_
+$xxx q4 xxxmxxxxxa_
+$xxxx q4 xxmxxxxxa_
+$xxxxx q4 xmxxxxxa_
+$xxxxxx q4 mxxxxxa_
+$xxxxxxm q4 xxxxxa_
+$xxxxxxmx q4 xxxxa_
+$xxxxxxmxx q4 xxxa_
+$xxxxxxmxxx q4 xxa_
+$xxxxxxmxxxx q4 xa_
+$xxxxxxmxxxxx q4 a_
+$xxxxxxmxxxx q3 xx_
+$xxxxxxmxxx q3 xxx_
+$xxxxxxmxx q3 xxxx_
+$xxxxxxmx q3 xxxxx_
+$xxxxxxm q3 xxxxxx_
+$xxxxxx q3 mxxxxxx_
+$xxxxx q3 xmxxxxxx_
+$xxxx q3 xxmxxxxxx_
+$xxx q3 xxxmxxxxxx_
+$xx q3 xxxxmxxxxxx_
+$x q3 xxxxxmxxxxxx_
+$ q3 xxxxxxmxxxxxx_
+q3 $xxxxxxmxxxxxx_
+$ q5 xxxxxxmxxxxxx_
+$x q5 xxxxxmxxxxxx_
+$xx q5 xxxxmxxxxxx_
+$xxx q5 xxxmxxxxxx_
+$xxxx q5 xxmxxxxxx_
+$xxxxx q5 xmxxxxxx_
+$xxxxxx q5 mxxxxxx_
+$xxxxxxm q5 xxxxxx_
+$xxxxxxmx q5 xxxxx_
+$xxxxxxmxx q5 xxxx_
+$xxxxxxmxxx q5 xxx_
+$xxxxxxmxxxx q5 xx_
+$xxxxxxmxxxxx q5 x_
+$xxxxxxmxxxxxx q5 _
+$xxxxxxmxxxxx qacc x_
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $aaaaaaaaaaaaa -T 500
+Name:                        Middle
+Input String:               '$aaaaaaaaaaaaa_'
+Max Transitions:             500
+The program has halted after reaching the maximum number of transitions: 500
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv aaa
+Name:                        Middle
+Input String:               'aaa_'
+Depth of Configuration Tree: 0
+Total Transitions Taken:     0
+String rejected in 0 steps
+
+##############################################
+
+./traceTM_kmorale3.py middle.csv $abaa
+Name:                        Middle
+Input String:               '$abaa_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     5
+String rejected in 5 steps
+
+##############################################
+

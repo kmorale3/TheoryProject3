@@ -1,0 +1,77 @@
+./traceTM_kmorale3.py lowercase.csv BBC
+Name:                        lowercase
+Input String:               'BBC_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     4
+String accepted in 4 steps:
+q0 BBC_
+b q0 BC_
+bb q0 C_
+bbc q0 _
+bbc_ qacc 
+
+##############################################
+
+./traceTM_kmorale3.py lowercase.csv bbc
+Name:                        lowercase
+Input String:               'bbc_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     4
+String accepted in 4 steps:
+q0 bbc_
+b q0 bc_
+bb q0 c_
+bbc q0 _
+bbc_ qacc 
+
+##############################################
+
+./traceTM_kmorale3.py lowercase.csv bBc
+Name:                        lowercase
+Input String:               'bBc_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     4
+String accepted in 4 steps:
+q0 bBc_
+b q0 Bc_
+bb q0 c_
+bbc q0 _
+bbc_ qacc 
+
+##############################################
+
+./traceTM_kmorale3.py lowercase.csv bBcDd
+Name:                        lowercase
+Input String:               'bBcDd_'
+Depth of Configuration Tree: 3
+Total Transitions Taken:     3
+String rejected in 3 steps
+
+##############################################
+
+./traceTM_kmorale3.py lowercase.csv AbCB
+Name:                        lowercase
+Input String:               'AbCB_'
+Depth of Configuration Tree: 5
+Total Transitions Taken:     5
+String accepted in 5 steps:
+q0 AbCB_
+a q0 bCB_
+ab q0 CB_
+abc q0 B_
+abcb q0 _
+abcb_ qacc 
+
+##############################################
+
+./traceTM_kmorale3.py lowercase.csv
+Name:                        lowercase
+Input String:               '_'
+Depth of Configuration Tree: 1
+Total Transitions Taken:     1
+String accepted in 1 steps:
+q0 _
+q0_
+
+##############################################
+

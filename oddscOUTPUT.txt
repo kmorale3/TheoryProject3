@@ -1,0 +1,84 @@
+./traceTM_kmorale3.py oddsc.csv ccc
+Name:                        oddc
+Input String:               'ccc_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     4
+String accepted in 4 steps:
+q1 ccc_
+c q2 cc_
+cc q1 c_
+ccc q2 _
+ccc_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv cccd
+Name:                        oddc
+Input String:               'cccd_'
+Depth of Configuration Tree: 3
+Total Transitions Taken:     3
+String rejected in 3 steps
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv c
+Name:                        oddc
+Input String:               'c_'
+Depth of Configuration Tree: 2
+Total Transitions Taken:     2
+String accepted in 2 steps:
+q1 c_
+c q2 _
+c_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv cc
+Name:                        oddc
+Input String:               'cc_'
+Depth of Configuration Tree: 2
+Total Transitions Taken:     2
+String rejected in 2 steps
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv cccc
+Name:                        oddc
+Input String:               'cccc_'
+Depth of Configuration Tree: 4
+Total Transitions Taken:     4
+String rejected in 4 steps
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv
+Name:                        oddc
+Input String:               '_'
+Depth of Configuration Tree: 0
+Total Transitions Taken:     0
+String rejected in 0 steps
+
+##############################################
+
+./traceTM_kmorale3.py oddsc.csv ccccccccccc
+Name:                        oddc
+Input String:               'ccccccccccc_'
+Depth of Configuration Tree: 12
+Total Transitions Taken:     12
+String accepted in 12 steps:
+q1 ccccccccccc_
+c q2 cccccccccc_
+cc q1 ccccccccc_
+ccc q2 cccccccc_
+cccc q1 ccccccc_
+ccccc q2 cccccc_
+cccccc q1 ccccc_
+ccccccc q2 cccc_
+cccccccc q1 ccc_
+ccccccccc q2 cc_
+cccccccccc q1 c_
+ccccccccccc q2 _
+ccccccccccc_ q3 
+
+##############################################
+

@@ -1,0 +1,116 @@
+./traceTM_kmorale3.py aplusTM.csv aaaaa
+Name:                        a plus
+Input String:               'aaaaa_'
+Depth of Configuration Tree: 6
+Total Transitions Taken:     11
+String accepted in 6 steps:
+q1 aaaaa_
+a q1 aaaa_
+aa q1 aaa_
+aaa q1 aa_
+aaaa q1 a_
+aaaaa q2 _
+aaaaa_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv aaaaa -T 9
+Name:                        a plus
+Input String:               'aaaaa_'
+Max Transitions:             9
+The program has halted after reaching the maximum number of transitions: 9
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv aaaaa -U 9
+Name:                        a plus
+Input String:               'aaaaa_'
+Depth of Configuration Tree: 6
+Total Transitions Taken:     11
+String accepted in 6 steps:
+q1 aaaaa_
+a q1 aaaa_
+aa q1 aaa_
+aaa q1 aa_
+aaaa q1 a_
+aaaaa q2 _
+aaaaa_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv aaaaa -T b
+Name:                        a plus
+Input String:               'aaaaa_'
+Depth of Configuration Tree: 6
+Total Transitions Taken:     11
+String accepted in 6 steps:
+q1 aaaaa_
+a q1 aaaa_
+aa q1 aaa_
+aaa q1 aa_
+aaaa q1 a_
+aaaaa q2 _
+aaaaa_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv aaaaaaaaaa
+Name:                        a plus
+Input String:               'aaaaaaaaaa_'
+Depth of Configuration Tree: 11
+Total Transitions Taken:     21
+String accepted in 11 steps:
+q1 aaaaaaaaaa_
+a q1 aaaaaaaaa_
+aa q1 aaaaaaaa_
+aaa q1 aaaaaaa_
+aaaa q1 aaaaaa_
+aaaaa q1 aaaaa_
+aaaaaa q1 aaaa_
+aaaaaaa q1 aaa_
+aaaaaaaa q1 aa_
+aaaaaaaaa q1 a_
+aaaaaaaaaa q2 _
+aaaaaaaaaa_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv
+Name:                        a plus
+Input String:               '_'
+Depth of Configuration Tree: 0
+Total Transitions Taken:     0
+String rejected in 0 steps
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv a
+Name:                        a plus
+Input String:               'a_'
+Depth of Configuration Tree: 2
+Total Transitions Taken:     3
+String accepted in 2 steps:
+q1 a_
+a q2 _
+a_ q3 
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv baaaaa
+Name:                        a plus
+Input String:               'baaaaa_'
+Depth of Configuration Tree: 0
+Total Transitions Taken:     0
+String rejected in 0 steps
+
+##############################################
+
+./traceTM_kmorale3.py aplusTM.csv aaabaa
+Name:                        a plus
+Input String:               'aaabaa_'
+Depth of Configuration Tree: 3
+Total Transitions Taken:     6
+String rejected in 6 steps
+
+##############################################
+
